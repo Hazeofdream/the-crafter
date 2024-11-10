@@ -71,6 +71,9 @@ class the_crafter implements IPostDBLoadMod {
 	//Rebalance
 	if (config.CraftingRebalance == true) {
 
+		// Lucky Scav Junk Box
+		getCraft("5b7c710788a4506dec015957").productionTime = 10800
+		
 		// Clin (1 -> 2)
 		getCraft("59e358a886f7741776641ac3").count = 2
 
@@ -100,7 +103,7 @@ class the_crafter implements IPostDBLoadMod {
 		getCraft("5ed51652f6c34d2cc26336a1").count = 2
 
 		// AFAK (IFAK 2 -> 1)
-		//getCraft("60098ad7c2240c0fe85c570a").requirements.find((x) => x.templateId == "590c678286f77426c9660122").count = 1
+		getCraft("60098ad7c2240c0fe85c570a").requirements.find((x) => x.templateId == "590c678286f77426c9660122").count = 1
 
 		// Portable defibrillator (Wires 3 -> 2, Capacitors 4 -> 2)
 		getCraft("5c052e6986f7746b207bc3c9").requirements.forEach((x) => {if (x.count && x.count > 2) {x.count = 2}})
