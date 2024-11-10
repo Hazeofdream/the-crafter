@@ -42,7 +42,7 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "5d403f9186f7743cac3f229b", count: 1, type: "Item"}],
 		EndProducts: {Common: {min: 0, max: 0}, Rare: {min: 1, max: 3}, Superrare: {min: 1, max: 2}}}]
 
-	logger.log(`Scavs want ALCOHOOOOOL!!!`, "yellow")
+	//logger.log(`Scavs want ALCOHOOOOOL!!!`, "yellow")
 	tables.hideout.scavcase = scavCaseDrink}
 
 	//BiggerStash
@@ -53,7 +53,8 @@ class the_crafter implements IPostDBLoadMod {
 		items["5811ce772459770e9e5f9532"]._props.Grids[0]._props.cellsV = 100
 		items["6602bcf19cc643f44a04274b"]._props.Grids[0]._props.cellsV = 125
 
-	logger.log(`Wow you have so many space now!`, "yellow")}
+	//logger.log(`Wow you have so many space now!`, "yellow")
+	}
 
 	//CheapStash
 	const originalStages = tables.hideout.areas.find((x) => x._id == "5d484fc0654e76006657e0ab").stages
@@ -66,7 +67,7 @@ class the_crafter implements IPostDBLoadMod {
 
 	tables.hideout.areas.find((x) => x._id == "5d484fc0654e76006657e0ab").stages = originalStages
 
-	if (config.CheapStash == true) {logger.log(`OOOHHH finally the stash price is not a scam`, "yellow")}
+	//if (config.CheapStash == true) {logger.log(`OOOHHH finally the stash price is not a scam`, "yellow")}
 
 	//Rebalance
 	if (config.CraftingRebalance == true) {
@@ -239,7 +240,8 @@ class the_crafter implements IPostDBLoadMod {
 		//Pilgrim tourist backpack (Lavatory 3 -> 2)
 		getCraft("59e763f286f7742ee57895da").requirements.find((x) => x.type == "Area").requiredLevel = 2
 
-		logger.log(`Perfectly balanced`, "yellow")}
+		//logger.log(`Perfectly balanced`, "yellow")
+		}
 
 	function getCraft(endProductID) {return tables.hideout.production.find((x) => x.endProduct == endProductID && x.areaType != 21)}
 	function getCraftID(craftID) {return tables.hideout.production.find((x) => x._id == craftID && x.areaType != 21)}
