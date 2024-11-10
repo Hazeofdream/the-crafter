@@ -394,7 +394,7 @@ class the_crafter implements IPostDBLoadMod {
 		requirements: [
 		{templateId: "5d40425986f7743185265461", type: "Tool"},
 		{templateId: "54527a984bdc2d4e668b4567", count: 200, type: "Item"},
-		{templateId: "5d6fc87386f77449db3db94e", count: 1, type: "Item"},
+		{templateId: "5d6fc78386f77449d825f9dc", count: 1, type: "Item"},
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
 	const am995 = {
@@ -441,7 +441,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
 	const am80 = {
-		_id: "the_crafter_am80", areaType: 10, productionTime: 1800, endProduct: "58dd3ad986f77403051cba8f", count: 80, productionLimitCount: 0,
+		_id: "the_crafter_am80", areaType: 10, productionTime: 900, endProduct: "58dd3ad986f77403051cba8f", count: 80, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5d1b31ce86f7742523398394", type: "Tool"},
 		{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
@@ -449,7 +449,17 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "5d6fc78386f77449d825f9dc", count: 2, type: "Item"},
 		{areaType: 10, requiredLevel: 2, type: "Area"}]}
 
-	tables.hideout.production.push(a545bt, a545bs, a5457n40, a556war, a556ssa, a762993, a762rbs, a338ap, abarrikada, aacprip, am441he, a762ap, appbs, aps12b, a855a1, am995, aspp, a921bt, a12mag, a12rip, am80)}
+		const am61 = {
+			_id: "the_crafter_am61", areaType: 10, productionTime: 1800, endProduct: "5a6086ea4f39f99cd479502f", count: 80, productionLimitCount: 0,
+			requirements: [
+			{templateId: "5d1b31ce86f7742523398394", type: "Tool"},
+			{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
+			{templateId: "58dd3ad986f77403051cba8f", count: 80, type: "Item"},
+			{templateId: "590c5a7286f7747884343aea", count: 1, type: "Item"},
+			{templateId: "5d6fc87386f77449db3db94e", count: 1, type: "Item"},
+			{areaType: 10, requiredLevel: 3, type: "Area"}]}
+
+	tables.hideout.production.push(a545bt, a545bs, a5457n40, a556war, a556ssa, a762993, a762rbs, a338ap, abarrikada, aacprip, am441he, a762ap, appbs, aps12b, a855a1, am995, aspp, a921bt, a12mag, a12rip, am80, am61)}
 
 	//Armored rigs
 	if (config.CraftArmoredrigs == true) {
