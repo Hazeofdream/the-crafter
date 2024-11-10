@@ -71,6 +71,12 @@ class the_crafter implements IPostDBLoadMod {
 
 	//Rebalance
 	if (config.CraftingRebalance == true) {
+		
+		// Object #11SR Keycard
+		getCraft("5e42c81886f7742a01529f57").productionTime = 7200
+
+		// Water Filter > Canister Conversion
+		getCraft("5d1b33a686f7742523398398").productionTime = 3600
 
 		// Lucky Scav Junk Box
 		getCraft("5b7c710788a4506dec015957").productionTime = 10800
@@ -99,6 +105,7 @@ class the_crafter implements IPostDBLoadMod {
 
 		// Aquamari (3 -> 5)
 		getCraft("5c0fa877d174af02a012e1cf").count = 5
+		getCraft("5c0fa877d174af02a012e1cf").productionTime = 1800
 
 		// MULE (1 -> 2)
 		getCraft("5ed51652f6c34d2cc26336a1").count = 2
@@ -1116,7 +1123,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 11, requiredLevel: 2, type: "Area"}]}
 
 	const SICCCase = {
-		_id: "the_crafter_sicccase", areaType: 11, productionTime: 43200, endProduct: "5d235bb686f77443f4331278", count: 1, productionLimitCount: 0,
+		_id: "the_crafter_sicccase", areaType: 11, productionTime: 10800, endProduct: "5d235bb686f77443f4331278", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
 		{templateId: "590c60fc86f77412b13fddcf", count: 1, type: "Item"},
