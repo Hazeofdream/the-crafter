@@ -100,7 +100,7 @@ class the_crafter implements IPostDBLoadMod {
 		getCraft("5ed51652f6c34d2cc26336a1").count = 2
 
 		// AFAK (IFAK 2 -> 1)
-		getCraft("60098ad7c2240c0fe85c570a").requirements.find((x) => x.templateId == "590c678286f77426c9660122").count = 1
+		//getCraft("60098ad7c2240c0fe85c570a").requirements.find((x) => x.templateId == "590c678286f77426c9660122").count = 1
 
 		// Portable defibrillator (Wires 3 -> 2, Capacitors 4 -> 2)
 		getCraft("5c052e6986f7746b207bc3c9").requirements.forEach((x) => {if (x.count && x.count > 2) {x.count = 2}})
@@ -214,8 +214,8 @@ class the_crafter implements IPostDBLoadMod {
 		//Weapon repair kit (Workbench 3 -> Intel 2, Weapon parts 10 -> 3, Insulating tape 6 -> 3, Master kit/fire removed)
 		getCraftID("629e19eddb6e1a02066676f1").areaType = 11
 		getCraftID("629e19eddb6e1a02066676f1").requirements = [
-		{templateId: "590c2e1186f77425357b6124", count: 1, type: "Item"},
-		{templateId: "544fb5454bdc2df8738b456a", count: 1, type: "Item"},
+		{templateId: "590c2e1186f77425357b6124", count: 1, type: "Tool"},
+		{templateId: "544fb5454bdc2df8738b456a", count: 1, type: "Tool"},
 		{templateId: "5d1c819a86f774771b0acd6c", count: 3, type: "Item"},
 		{templateId: "5734795124597738002c6176", count: 3, type: "Item"},
 		{areaType: 11, requiredLevel: 2, type: "Area"}]
@@ -244,7 +244,7 @@ class the_crafter implements IPostDBLoadMod {
 	//Keycards
 	if (config.CraftKeycards == true) {
 		const AccessLab = {
-		_id: "accesslab001", areaType: 11, productionTime: 86400, endProduct: "5c94bbff86f7747ee735c08f", count: 1, productionLimitCount: 0,
+		_id: "accesslab001", areaType: 11, productionTime: 7200, endProduct: "5c94bbff86f7747ee735c08f", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "590c2c9c86f774245b1f03f2", type: "Tool"},
 		{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
@@ -1036,7 +1036,7 @@ class the_crafter implements IPostDBLoadMod {
 	//Containers
 	if (config.CraftContainers == true) {
 	const ItemCase = {
-		_id: "the_crafter_itemcase", areaType: 11, productionTime: 36000, endProduct: "59fb042886f7746c5005a7b2", count: 1, productionLimitCount: 0,
+		_id: "the_crafter_itemcase", areaType: 11, productionTime: 10800, endProduct: "59fb042886f7746c5005a7b2", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5d40419286f774318526545f", type: "Tool"},
 		{templateId: "5b7c710788a4506dec015957", count: 1, type: "Item"},
@@ -1047,7 +1047,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 11, requiredLevel: 1, type: "Area"}]}
 
 	const MedCase = {
-		_id: "the_crafter_medcase", areaType: 11, productionTime: 28800, endProduct: "5aafbcd986f7745e590fff23", count: 1, productionLimitCount: 0,
+		_id: "the_crafter_medcase", areaType: 11, productionTime: 10800, endProduct: "5aafbcd986f7745e590fff23", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5d40419286f774318526545f", type: "Tool"},
 		{templateId: "567143bf4bdc2d1a0f8b4567", count: 1, type: "Item"},
@@ -1060,7 +1060,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 11, requiredLevel: 1, type: "Area"}]}
 
 	const MoneyCase = {
-		_id: "the_crafter_moneycase", areaType: 11, productionTime: 460800, endProduct: "59fb016586f7746d0d4b423a", count: 1, productionLimitCount: 0,
+		_id: "the_crafter_moneycase", areaType: 11, productionTime: 10800, endProduct: "59fb016586f7746d0d4b423a", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "59db794186f77448bc595262", count: 1, type: "Item"},
 		{templateId: "5c94bbff86f7747ee735c08f", count: 2, type: "Item"},
@@ -1068,14 +1068,14 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 11, requiredLevel: 3, type: "Area"}]}
 
 	const InjectorCase = {
-		_id: "the_crafter_injectorcase", areaType: 11, productionTime: 43200, endProduct: "619cbf7d23893217ec30b689", count: 1, productionLimitCount: 0,
+		_id: "the_crafter_injectorcase", areaType: 11, productionTime: 3600, endProduct: "619cbf7d23893217ec30b689", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5c093e3486f77430cb02e593", count: 1, type: "Item"},
 		{templateId: "544fb3f34bdc2d03748b456a", count: 3, type: "Item"},
 		{areaType: 11, requiredLevel: 2, type: "Area"}]}
 
 	const KeycardsCase = {
-		_id: "the_crafter_keycardscase", areaType: 11, productionTime: 46800, endProduct: "619cbf9e0a7c3a1a2731940a", count: 1, productionLimitCount: 0,
+		_id: "the_crafter_keycardscase", areaType: 11, productionTime: 3600, endProduct: "619cbf9e0a7c3a1a2731940a", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "60b0f6c058e0b0481a09ad11", count: 1, type: "Item"},
 		{templateId: "5c94bbff86f7747ee735c08f", count: 2, type: "Item"},
@@ -1083,7 +1083,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 11, requiredLevel: 2, type: "Area"}]}
 
 	const FoodCase = {
-		_id: "the_crafter_foodcase", areaType: 11, productionTime: 21600, endProduct: "5c093db286f7740a1b2617e3", count: 1, productionLimitCount: 0,
+		_id: "the_crafter_foodcase", areaType: 11, productionTime: 10800, endProduct: "5c093db286f7740a1b2617e3", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5d40419286f774318526545f", type: "Tool"},
 		{templateId: "5e2af41e86f774755a234b67", count: 4, type: "Item"},
@@ -1093,7 +1093,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 11, requiredLevel: 1, type: "Area"}]}
 
 	const WepCase = {
-		_id: "the_crafter_wepcase", areaType: 11, productionTime: 36000, endProduct: "59fb023c86f7746d0d4b423c", count: 1, productionLimitCount: 0,
+		_id: "the_crafter_wepcase", areaType: 11, productionTime: 10800, endProduct: "59fb023c86f7746d0d4b423c", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
 		{templateId: "59fb042886f7746c5005a7b2", count: 1, type: "Item"},
@@ -1101,7 +1101,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 11, requiredLevel: 2, type: "Area"}]}
 
 	const SICCCase = {
-		_id: "the_crafter_sicccase", areaType: 11, productionTime: 86400, endProduct: "5d235bb686f77443f4331278", count: 1, productionLimitCount: 0,
+		_id: "the_crafter_sicccase", areaType: 11, productionTime: 43200, endProduct: "5d235bb686f77443f4331278", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
 		{templateId: "590c60fc86f77412b13fddcf", count: 1, type: "Item"},
@@ -1115,7 +1115,7 @@ class the_crafter implements IPostDBLoadMod {
 	if (config.CraftKits == true) {
 
 	const BodyKit = {
-		_id: "the_crafter_bodykit", areaType: 11, productionTime: 72000, endProduct: "591094e086f7747caa7bb2ef", count: 1, productionLimitCount: 0,
+		_id: "the_crafter_bodykit", areaType: 11, productionTime: 21600, endProduct: "591094e086f7747caa7bb2ef", count: 1, productionLimitCount: 0,
 		requirements: [
 		{templateId: "62a0a098de7ac8199358053b", type: "Tool"},
 		{templateId: "61bf83814088ec1a363d7097", type: "Tool"},
