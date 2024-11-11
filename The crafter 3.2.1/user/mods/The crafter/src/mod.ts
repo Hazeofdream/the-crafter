@@ -402,7 +402,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
 	const a855a1 = {
-		_id: "the_crafter_a855a1", areaType: 10, productionTime: 44900, endProduct: "54527ac44bdc2d36668b4567", count: 200, productionLimitCount: 0,
+		_id: "the_crafter_a855a1", areaType: 10, productionTime: 600, endProduct: "54527ac44bdc2d36668b4567", count: 200, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5d40425986f7743185265461", type: "Tool"},
 		{templateId: "54527a984bdc2d4e668b4567", count: 200, type: "Item"},
