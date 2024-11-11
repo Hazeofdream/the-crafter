@@ -69,9 +69,11 @@ class the_crafter implements IPostDBLoadMod {
 
 	//if (config.CheapStash == true) {logger.log(`OOOHHH finally the stash price is not a scam`, "yellow")}
 
-	//Rebalance
+	// Rebalance
 	if (config.CraftingRebalance == true) {
-		
+		// Weapon Repair Kit
+		getCraft("5910968f86f77425cf569c32").productionTime = 21600
+
 		// Object #11SR Keycard
 		getCraft("5e42c81886f7742a01529f57").productionTime = 7200
 
