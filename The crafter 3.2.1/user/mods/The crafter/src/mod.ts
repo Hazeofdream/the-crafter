@@ -652,6 +652,21 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "544fb37f4bdc2dee738b4567", count: 1, type: "Item"},
 		{areaType: 8, requiredLevel: 1, type: "Area"}]}
 
+	const expedfuel = {
+		_id: "the_crafter_expedrefill", areaType: 11, productionTime: 300, endProduct: "5d1b371186f774253763a656", count: 1, productionLimitCount: 0,
+		requirements: [
+		{templateId: "5d1b371186f774253763a656", type: "Tool"},
+		{templateId: "59fafb5d86f774067a6f2084", count: 1, type: "Item"},
+		{areaType: 11, requiredLevel: 1, type: "Area"}]}
+
+	const metalfuel = {
+		_id: "the_crafter_metalfuel", areaType: 11, productionTime: 300, endProduct: "5d1b36a186f7742523398433", count: 1, productionLimitCount: 0,
+		requirements: [
+		{templateId: "5d1b36a186f7742523398433", type: "Tool"},
+		{templateId: "59fafb5d86f774067a6f2084", count: 2, type: "Item"},
+		{areaType: 11, requiredLevel: 2, type: "Area"}]}
+	
+
 	const MRE = {
 		_id: "the_crafter_MRE", areaType: 8, productionTime: 2880, endProduct: "590c5f0d86f77413997acfab", count: 2, productionLimitCount: 0,
 		requirements: [
@@ -660,7 +675,7 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "57347d9c245977448b40fa85", count: 1, type: "Item"},
 		{areaType: 8, requiredLevel: 1, type: "Area"}]}
 
-	tables.hideout.production.push(vitamins, MRE)}
+	tables.hideout.production.push(vitamins, MRE, expedfuel, metalfuel)}
 
 	//Secure containers
 	if (config.CraftSecureContainers == true) {
