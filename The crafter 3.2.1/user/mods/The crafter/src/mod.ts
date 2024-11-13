@@ -300,7 +300,7 @@ class the_crafter implements IPostDBLoadMod {
 		requirements: [
 		{templateId: "5d40425986f7743185265461", type: "Tool"},
 		{templateId: "5d63d33b86f7746ea9275524", type: "Tool"},
-		{templateId: "56dff061d2720bb5668b4567", count: 100, type: "Item"},
+		{templateId: "56dfef82d2720bbd668b4567", count: 100, type: "Item"},
 		{templateId: "5d6fc78386f77449d825f9dc", count: 2, type: "Item"},
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
