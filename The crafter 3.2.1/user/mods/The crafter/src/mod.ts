@@ -71,6 +71,11 @@ class the_crafter implements IPostDBLoadMod {
 
 	// Rebalance
 	if (config.CraftingRebalance == true) {
+		// Lower Gunpowder Times
+		getCraft("5d6fc87386f77449db3db94e").productionTime = 900 // Hawk
+		getCraft("5d6fc78386f77449d825f9dc").productionTime = 900 // Eagle
+		getCraft("590c5a7286f7747884343aea").productionTime = 900 // Kite
+
 		// Weapon Repair Kit
 		getCraft("5910968f86f77425cf569c32").productionTime = 21600
 
@@ -273,20 +278,30 @@ class the_crafter implements IPostDBLoadMod {
 	//Ammunitions
 	if (config.CraftAmmunitions == true) {
 	const a545bt = {
-		_id: "the_crafter_545bt", areaType: 10, productionTime: 21600, endProduct: "56dff061d2720bb5668b4567", count: 100, productionLimitCount: 0,
+		_id: "the_crafter_545bt", areaType: 10, productionTime: 900, endProduct: "56dff061d2720bb5668b4567", count: 100, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5d40425986f7743185265461", type: "Tool"},
 		{templateId: "56dff0bed2720bb0668b4567", count: 100, type: "Item"},
 		{templateId: "590c5a7286f7747884343aea", count: 1, type: "Item"},
 		{areaType: 10, requiredLevel: 2, type: "Area"}]}
 
-	const a545bs = {
-		_id: "the_crafter_545bs", areaType: 10, productionTime: 52200, endProduct: "56dff026d2720bb8668b4567", count: 100, productionLimitCount: 0,
+	const a545bpgs = {
+		_id: "the_crafter_545bpgs", areaType: 10, productionTime: 900, endProduct: "56dfef82d2720bbd668b4567", count: 100, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5d40425986f7743185265461", type: "Tool"},
 		{templateId: "5d63d33b86f7746ea9275524", type: "Tool"},
 		{templateId: "56dff061d2720bb5668b4567", count: 100, type: "Item"},
-		{templateId: "5d6fc87386f77449db3db94e", count: 1, type: "Item"},
+		{templateId: "590c5a7286f7747884343aea", count: 1, type: "Item"},
+		{templateId: "5d6fc78386f77449d825f9dc", count: 1, type: "Item"},
+		{areaType: 10, requiredLevel: 3, type: "Area"}]}
+
+	const a545bsgs = {
+		_id: "the_crafter_545bsgs", areaType: 10, productionTime: 1800, endProduct: "56dff026d2720bb8668b4567", count: 100, productionLimitCount: 0,
+		requirements: [
+		{templateId: "5d40425986f7743185265461", type: "Tool"},
+		{templateId: "5d63d33b86f7746ea9275524", type: "Tool"},
+		{templateId: "56dff061d2720bb5668b4567", count: 100, type: "Item"},
+		{templateId: "5d6fc78386f77449d825f9dc", count: 2, type: "Item"},
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
 	const a5457n40 = {
@@ -300,7 +315,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
 	const a556war = {
-		_id: "the_crafter_556war", areaType: 10, productionTime: 17100, endProduct: "5c0d5ae286f7741e46554302", count: 40, productionLimitCount: 0,
+		_id: "the_crafter_556war", areaType: 10, productionTime: 300, endProduct: "5c0d5ae286f7741e46554302", count: 40, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5d40425986f7743185265461", type: "Tool"},
 		{templateId: "59e6920f86f77411d82aa167", count: 40, type: "Item"},
@@ -308,7 +323,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 10, requiredLevel: 2, type: "Area"}]}
 
 	const a556ssa = {
-		_id: "the_crafter_556ssa", areaType: 10, productionTime: 1800, endProduct: "601949593ae8f707c4608daa", count: 120, productionLimitCount: 0,
+		_id: "the_crafter_556ssa", areaType: 10, productionTime: 1200, endProduct: "601949593ae8f707c4608daa", count: 200, productionLimitCount: 0,
 		requirements: [
 		{templateId: "62a0a0bb621468534a797ad5", type: "Tool"},
 		{templateId: "54527ac44bdc2d36668b4567", count: 200, type: "Item"},
@@ -318,7 +333,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
 	const a762993 = {
-		_id: "the_crafter_762993", areaType: 10, productionTime: 1800, endProduct: "5efb0c1bd79ff02a1f5e68d9", count: 60, productionLimitCount: 0,
+		_id: "the_crafter_762993", areaType: 10, productionTime: 1200, endProduct: "5efb0c1bd79ff02a1f5e68d9", count: 60, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5af04b6486f774195a3ebb49",type: "Tool"},
 		{templateId: "590c639286f774151567fa95",type: "Tool"},
@@ -366,7 +381,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
 	const am441he = {
-		_id: "the_crafter_m441he", areaType: 10, productionTime: 14000, endProduct: "5ede47405b097655935d7d16", count: 7, productionLimitCount: 0,
+		_id: "the_crafter_m441he", areaType: 10, productionTime: 1800, endProduct: "5ede47405b097655935d7d16", count: 7, productionLimitCount: 0,
 		requirements: [
 		{templateId: "590c2e1186f77425357b6124", type: "Tool"},
 		{templateId: "5656eb674bdc2d35148b457c", count: 4, type: "Item"},
@@ -374,7 +389,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
 	const a762ap = {
-		_id: "the_crafter_762ap", areaType: 10, productionTime: 72000, endProduct: "601aa3d2b2bcb34913271e6d", count: 80, productionLimitCount: 0,
+		_id: "the_crafter_762ap", areaType: 10, productionTime: 1800, endProduct: "601aa3d2b2bcb34913271e6d", count: 80, productionLimitCount: 0,
 		requirements: [
 		{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
 		{templateId: "5d6fc78386f77449d825f9dc", count: 2, type: "Item"},
@@ -388,7 +403,7 @@ class the_crafter implements IPostDBLoadMod {
 		requirements: [
 		{templateId: "590c2b4386f77425357b6123", type: "Tool"},
 		{templateId: "5d40425986f7743185265461", type: "Tool"},
-		{templateId: "590c5a7286f7747884343aea", count: 1, type: "Item"},
+		{templateId: "56dff026d2720bb8668b4567", count: 100, type: "Item"},
 		{templateId: "5d6fc87386f77449db3db94e", count: 1, type: "Item"},
 		{templateId: "5d6fc78386f77449d825f9dc", count: 1, type: "Item"},
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
@@ -404,7 +419,7 @@ class the_crafter implements IPostDBLoadMod {
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
 	const a855a1 = {
-		_id: "the_crafter_a855a1", areaType: 10, productionTime: 600, endProduct: "54527ac44bdc2d36668b4567", count: 200, productionLimitCount: 0,
+		_id: "the_crafter_a855a1", areaType: 10, productionTime: 900, endProduct: "54527ac44bdc2d36668b4567", count: 200, productionLimitCount: 0,
 		requirements: [
 		{templateId: "5d40425986f7743185265461", type: "Tool"},
 		{templateId: "54527a984bdc2d4e668b4567", count: 200, type: "Item"},
@@ -417,6 +432,7 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "590c2e1186f77425357b6124", type: "Tool"},
 		{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
 		{templateId: "54527ac44bdc2d36668b4567", count: 180, type: "Item"},
+		{templateId: "590c5a7286f7747884343aea", count: 2, type: "Item"},
 		{templateId: "5d6fc78386f77449d825f9dc", count: 1, type: "Item"},
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
@@ -463,17 +479,19 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "5d6fc78386f77449d825f9dc", count: 2, type: "Item"},
 		{areaType: 10, requiredLevel: 2, type: "Area"}]}
 
-		const am61 = {
-			_id: "the_crafter_am61", areaType: 10, productionTime: 1800, endProduct: "5a6086ea4f39f99cd479502f", count: 80, productionLimitCount: 0,
-			requirements: [
-			{templateId: "5d1b31ce86f7742523398394", type: "Tool"},
-			{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
-			{templateId: "58dd3ad986f77403051cba8f", count: 80, type: "Item"},
-			{templateId: "590c5a7286f7747884343aea", count: 1, type: "Item"},
-			{templateId: "5d6fc87386f77449db3db94e", count: 1, type: "Item"},
-			{areaType: 10, requiredLevel: 3, type: "Area"}]}
+	const am61 = {
+		_id: "the_crafter_am61", areaType: 10, productionTime: 1800, endProduct: "5a6086ea4f39f99cd479502f", count: 80, productionLimitCount: 0,
+		requirements: [
+		{templateId: "5d1b31ce86f7742523398394", type: "Tool"},
+		{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
+		{templateId: "58dd3ad986f77403051cba8f", count: 80, type: "Item"},
+		{templateId: "590c5a7286f7747884343aea", count: 2, type: "Item"},
+		{templateId: "5d6fc87386f77449db3db94e", count: 2, type: "Item"},
+		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
-	tables.hideout.production.push(a545bt, a545bs, a5457n40, a556war, a556ssa, a762993, a762rbs, a338ap, abarrikada, aacprip, am441he, a762ap, appbs, aps12b, a855a1, am995, aspp, a921bt, a12mag, a12rip, am80, am61)}
+	
+
+	tables.hideout.production.push(a545bt, a545bpgs, a545bsgs, a5457n40, a556war, a556ssa, a762993, a762rbs, a338ap, abarrikada, aacprip, am441he, a762ap, appbs, aps12b, a855a1, am995, aspp, a921bt, a12mag, a12rip, am80, am61)}
 
 	//Armored rigs
 	if (config.CraftArmoredrigs == true) {
