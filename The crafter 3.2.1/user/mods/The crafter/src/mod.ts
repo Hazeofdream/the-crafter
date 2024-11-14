@@ -674,14 +674,14 @@ class the_crafter implements IPostDBLoadMod {
 	const expedfuel = {
 		_id: "the_crafter_expedrefill", areaType: 11, productionTime: 300, endProduct: "5d1b371186f774253763a656", count: 1, productionLimitCount: 0,
 		requirements: [
-		{templateId: "5d1b371186f774253763a656", type: "Tool"},
+		{templateId: "5d1b371186f774253763a656", type: "Item"},
 		{templateId: "59fafb5d86f774067a6f2084", count: 1, type: "Item"},
 		{areaType: 11, requiredLevel: 1, type: "Area"}]}
 
 	const metalfuel = {
 		_id: "the_crafter_metalfuel", areaType: 11, productionTime: 300, endProduct: "5d1b36a186f7742523398433", count: 1, productionLimitCount: 0,
 		requirements: [
-		{templateId: "5d1b36a186f7742523398433", type: "Tool"},
+		{templateId: "5d1b36a186f7742523398433", type: "Item"},
 		{templateId: "59fafb5d86f774067a6f2084", count: 2, type: "Item"},
 		{areaType: 11, requiredLevel: 2, type: "Area"}]}
 	
