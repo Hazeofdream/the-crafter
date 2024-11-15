@@ -72,8 +72,7 @@ class the_crafter implements IPostDBLoadMod {
 	// Rebalance
 	if (config.CraftingRebalance == true) {
 		// Lower Gunpowder Times
-		getCraft("5d6fc87386f77449db3db94e").endProduct.forEach((x) => x.endProduct == "5d6fc87386f77449db3db94e").productionTime = 900  // Hawk
-		//tables.hideout.production.forEach((x) => x.endProduct == "5d6fc87386f77449db3db94e" && x.areaType != 21).productionTime = 900
+		tables.hideout.production.filter((x) => x.endProduct == "5d6fc87386f77449db3db94e" && x.areaType != 21).productionTime = 900
 		getCraft("5d6fc78386f77449d825f9dc").productionTime = 900 // Eagle
 		getCraft("590c5a7286f7747884343aea").productionTime = 900 // Kite
 
