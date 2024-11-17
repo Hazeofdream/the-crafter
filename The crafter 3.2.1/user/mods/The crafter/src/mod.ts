@@ -72,7 +72,7 @@ class the_crafter implements IPostDBLoadMod {
 	// Rebalance
 	if (config.CraftingRebalance == true) {
 		// Lower Gunpowder Times
-		getCraft("5d6fc87386f77449db3db94e").endProduct.foreach((x) => {if (x.productionTime) {x.productionTime = 900}})
+		getCraftMult("5d6fc87386f77449db3db94e").forEach((x) => {if (x.productionTime) {x.productionTime = 900}})
 		getCraft("5d6fc78386f77449d825f9dc").productionTime = 900 // Eagle
 		getCraft("590c5a7286f7747884343aea").productionTime = 900 // Kite
 
@@ -256,7 +256,8 @@ class the_crafter implements IPostDBLoadMod {
 
 		//logger.log(`Perfectly balanced`, "yellow")
 		}
-
+	
+	function getCraftMult(endProductID) {return tables.hideout.production.filter((x) => x.endProduct == endProductID && x.areaType != 21)}
 	function getCraft(endProductID) {return tables.hideout.production.find((x) => x.endProduct == endProductID && x.areaType != 21)}
 	function getCraftID(craftID) {return tables.hideout.production.find((x) => x._id == craftID && x.areaType != 21)}
 
