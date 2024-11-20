@@ -693,6 +693,15 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "59fafb5d86f774067a6f2084", count: 2, type: "Item"},
 		{areaType: 11, requiredLevel: 2, type: "Area"}]}
 	
+	const airfilter = {
+		_id: "the_crafter_airfilter", areaType: 11, productionTime: 300, endProduct: "5d1b2f3f86f774252167a52c", count: 1, productionLimitCount: 0,
+		requirements: [
+		{templateId: "590c2e1186f77425357b6124", type: "Tool"}
+		{templateId: "5d1b2f3f86f774252167a52c", type: "Item"},
+		{templateId: "590a3b0486f7743954552bdb", count: 1, type: "Item"},
+		{templateId: "61bf7b6302b3924be92fa8c3", count: 6, type: "Item"},
+		{templateId: "57347c5b245977448d35f6e1", count: 2, type: "Item"},
+		{areaType: 11, requiredLevel: 2, type: "Area"}]}
 
 	const MRE = {
 		_id: "the_crafter_MRE", areaType: 8, productionTime: 2880, endProduct: "590c5f0d86f77413997acfab", count: 2, productionLimitCount: 0,
@@ -702,7 +711,7 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "57347d9c245977448b40fa85", count: 1, type: "Item"},
 		{areaType: 8, requiredLevel: 1, type: "Area"}]}
 
-	tables.hideout.production.push(vitamins, MRE, expedfuel, metalfuel)}
+	tables.hideout.production.push(vitamins, MRE, expedfuel, metalfuel, airfilter)}
 
 	//Secure containers
 	if (config.CraftSecureContainers == true) {
