@@ -500,7 +500,24 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "5d6fc87386f77449db3db94e", count: 1, type: "Item"},
 		{areaType: 10, requiredLevel: 3, type: "Area"}]}
 
-	tables.hideout.production.push(a545bt, a545bpgs, a545bsgs, a5457n40, a556war, a556ssa, a762993, a762rbs, a338ap, abarrikada, aacprip, am441he, a762ap, appbs, aps12b, a855a1, am995, aspp, a921bt, a12mag, a12rip, am80, am61, m406)}
+	const spearfmj = {
+		_id: "the_crafter_spearfmj", areaType: 10, productionTime: 900, endProduct: "6529302b8c26af6326029fb7", count: 200, productionLimitCount: 0,
+		requirements: [
+		{templateId: "5d1b31ce86f7742523398394", type: "Tool"},
+		{templateId: "58dd3ad986f77403051cba8f", count: 200, type: "Item"},
+		{templateId: "5d6fc78386f77449d825f9dc", count: 2, type: "Item"},
+		{areaType: 10, requiredLevel: 2, type: "Area"}]}
+
+	const spearhybrid = {
+		_id: "the_crafter_spearhybrid", areaType: 10, productionTime: 1800, endProduct: "6529243824cbe3c74a05e5c1", count: 200, productionLimitCount: 0,
+		requirements: [
+		{templateId: "544fb5454bdc2df8738b456a", type: "Tool"},
+		{templateId: "6529302b8c26af6326029fb7", count: 200, type: "Item"},
+		{templateId: "5d6fc78386f77449d825f9dc", count: 1, type: "Item"},
+		{templateId: "5d6fc87386f77449db3db94e", count: 1, type: "Item"}
+		{areaType: 10, requiredLevel: 2, type: "Area"}]}
+
+	tables.hideout.production.push(a545bt, a545bpgs, a545bsgs, a5457n40, a556war, a556ssa, a762993, a762rbs, a338ap, abarrikada, aacprip, am441he, a762ap, appbs, aps12b, a855a1, am995, aspp, a921bt, a12mag, a12rip, am80, am61, m406, spearfmj, spearhybrid)}
 
 	//Armored rigs
 	if (config.CraftArmoredrigs == true) {
@@ -692,16 +709,6 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "5d1b36a186f7742523398433", type: "Item"},
 		{templateId: "59fafb5d86f774067a6f2084", count: 2, type: "Item"},
 		{areaType: 11, requiredLevel: 2, type: "Area"}]}
-	
-	const airfilter = {
-		_id: "the_crafter_airfilter", areaType: 11, productionTime: 300, endProduct: "5d1b2f3f86f774252167a52c", count: 1, productionLimitCount: 0,
-		requirements: [
-		{templateId: "590c2e1186f77425357b6124", type: "Tool"}
-		{templateId: "5d1b2f3f86f774252167a52c", type: "Item"},
-		{templateId: "590a3b0486f7743954552bdb", count: 1, type: "Item"},
-		{templateId: "61bf7b6302b3924be92fa8c3", count: 6, type: "Item"},
-		{templateId: "57347c5b245977448d35f6e1", count: 2, type: "Item"},
-		{areaType: 11, requiredLevel: 2, type: "Area"}]}
 
 	const MRE = {
 		_id: "the_crafter_MRE", areaType: 8, productionTime: 2880, endProduct: "590c5f0d86f77413997acfab", count: 2, productionLimitCount: 0,
@@ -711,7 +718,7 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "57347d9c245977448b40fa85", count: 1, type: "Item"},
 		{areaType: 8, requiredLevel: 1, type: "Area"}]}
 
-	tables.hideout.production.push(vitamins, MRE, expedfuel, metalfuel, airfilter)}
+	tables.hideout.production.push(vitamins, MRE, expedfuel, metalfuel)}
 
 	//Secure containers
 	if (config.CraftSecureContainers == true) {

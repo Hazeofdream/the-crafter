@@ -1,9 +1,9 @@
 {
 	"name": "the_crafter",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"sptVersion": "~3.9",
-	"author": "vampucio",
-	"contributors": ["Haze_of_dream"],
+	"author": "vampucio, Haze_of_dream",
+	"contributors": [""],
 	"license": "MIT",
 	"isBundleMod": false,
 	"loadBefore": ["ServerValueModifier"],
