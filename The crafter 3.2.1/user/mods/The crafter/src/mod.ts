@@ -1265,7 +1265,16 @@ class the_crafter implements IPostDBLoadMod {
 		{templateId: "64afd81707e2cf40e903a316", count: 1, type: "Item"},
 		{areaType: 2, requiredLevel: 3, type: "Area"}]}
 
-	tables.hideout.production.push(Kirasa, A6b13, Trooper, Gzhel, Korund, Zhuk)}
+		const Thor = {
+		_id: "the_crafter_Thor", areaType: 2, productionTime: 10800, endProduct: "60a283193cb70855c43a381d", count: 1, productionLimitCount: 0,
+		requirements: [
+		{templateId: "63a0b208f444d32d6f03ea1e", type: "Tool"},
+		{templateId: "5e2af4d286f7746d4159f07a", count: 3, type: "Item"},
+		{templateId: "656fa61e94b480b8a500c0e8", count: 1, type: "Item"},
+		{templateId: "64afdb577bb3bfe8fe03fd1d", count: 1, type: "Item"},
+		{areaType: 2, requiredLevel: 3, type: "Area"}]}
+
+	tables.hideout.production.push(Kirasa, A6b13, Trooper, Gzhel, Korund, Zhuk, Thor)}
 
 	//Headsets
 	if (config.CraftHeadsets == true) {
